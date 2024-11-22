@@ -1,0 +1,284 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid #ff7e5f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4em;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #222;
+  padding: 12px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 25px;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background: #ff7e5f;
+  transform: translateY(-4px);
+}
+
+nav a:active {
+  background: #feb47b;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #ff7e5f;
+  font-weight: 700;
+}
+
+section p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #bbb;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+/* Card Section */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.card:hover img {
+  opacity: 0.8;
+}
+
+.card .description {
+  padding: 20px;
+  text-align: center;
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.card .description h3 {
+  margin: 15px 0;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.card .description p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.see-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #ff7e5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.see-more:hover {
+  background: #feb47b;
+  transform: translateY(-4px);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.modal-content {
+  background: #333;
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.modal-content h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ff7e5f;
+}
+
+.modal-content p {
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+.modal-content button {
+  background: #ff7e5f;
+  padding: 12px 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.modal-content button:hover {
+  background: #feb47b;
+  transform: translateY(-4px);
+}
+
+/* Footer Styling */
+footer {
+  background: #222;
+  color: #bbb;
+  padding: 25px;
+  text-align: center;
+  border-top: 2px solid #ff7e5f;
+}
+
+footer a {
+  color: #ff7e5f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-form label {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #1d1d1d;
+  color: #fff;
+  font-size: 1.1em;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff7e5f;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 18px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #feb47b;
+}
+
+.contact-form textarea {
+  height: 180px;
+  resize: vertical;
+}
