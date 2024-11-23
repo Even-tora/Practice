@@ -2,15 +2,16 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #121212;
+  background: linear-gradient(135deg,#E8A49C, #3C4CAD, #240E8B, #F04393 );
   color: #ffffff;
   line-height: 1.6;
   box-sizing: border-box;
 }
 
+
 header {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
-  color: white;
+  background: linear-gradient(135deg,#DC8665, #138086, #534666, #CD7672, #F9C449);
+  color: rgb(14, 12, 12);
   padding: 60px 20px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
@@ -30,6 +31,19 @@ header p {
   font-size: 1.5em;
   font-weight: 300;
 }
+/* About Us Section */
+#about {
+  color: #dcf3dd; /* Set text color to green */
+}
+
+#about h2 {
+  color: #FF5733; /* Set color of the About Us heading */
+}
+
+#about p {
+  color: #000000; /* Set color of the paragraph text */
+}
+
 
 /* Navigation Bar */
 nav {
@@ -87,8 +101,8 @@ section p {
 /* Card Section */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
 }
 
 .card {
@@ -98,6 +112,7 @@ section p {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
+  height: auto;
 }
 
 .card:hover {
@@ -107,7 +122,7 @@ section p {
 
 .card img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   transition: opacity 0.3s;
 }
@@ -117,20 +132,20 @@ section p {
 }
 
 .card .description {
-  padding: 20px;
+  padding: 8px;
   text-align: center;
   background: #2b2b2b;
   color: #fff;
 }
 
 .card .description h3 {
-  margin: 15px 0;
-  font-size: 1.8em;
+  margin: 8px 0;
+  font-size: 1.4em;
   font-weight: 600;
 }
 
 .card .description p {
-  font-size: 1em;
+  font-size: 0.7em;
   line-height: 1.6;
   color: #bbb;
 }
@@ -139,8 +154,8 @@ section p {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 20px;
-  background: #ff7e5f;
-  color: #fff;
+  background: #111111;
+  color: #fffbfb;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 500;
