@@ -1,3 +1,33 @@
+/*-home-*/
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background: #111;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
 /* General Styling */
 body {
   margin: 0;
@@ -6,6 +36,9 @@ body {
   color: #ffffff;
   line-height: 1.6;
   box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 
@@ -41,7 +74,7 @@ header p {
 }
 
 #about p {
-  color: #000000; /* Set color of the paragraph text */
+  color: #ece7e7; /* Set color of the paragraph text */
 }
 
 
@@ -122,7 +155,7 @@ section p {
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 280px;
   object-fit: cover;
   transition: opacity 0.3s;
 }
@@ -243,9 +276,9 @@ footer a:hover {
   max-width: 650px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #2b2b2b;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px transparent;
 }
 
 .contact-form .form-group {
@@ -263,7 +296,7 @@ footer a:hover {
 .contact-form textarea {
   width: 100%;
   padding: 14px;
-  border: 1px solid #444;
+  border: 1px solid transparent;
   border-radius: 8px;
   background-color: #1d1d1d;
   color: #fff;
@@ -274,7 +307,7 @@ footer a:hover {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #ff7e5f;
+  border-color: #ffffff;
 }
 
 .contact-form button {
