@@ -99,7 +99,7 @@ header p {
 }
 
 #about h2 {
-  color: #FF5733; /* Set color of the About Us heading */
+  color: rgb(241, 189, 189); /* Set color of the About Us heading */
 }
 
 #about p {
@@ -148,7 +148,7 @@ section h2 {
   text-align: center;
   font-size: 3em;
   margin-bottom: 20px;
-  color: #ff7e5f;
+  color: #f1bdbd;
   font-weight: 700;
 }
 
