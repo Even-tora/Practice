@@ -196,7 +196,7 @@ section p {
 .card .description {
   padding: 8px;
   text-align: center;
-  background: #2b2b2b;
+  background: transparent;
   color: #fff;
 }
 
