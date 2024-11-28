@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: 'Khula', Arial, sans-serif;
-  background: linear-gradient(135deg, #E8A49C, #3C4CAD, #240E8B, #F04393);
+  background: linear-gradient(135deg, #b4dbd5, #92c9c2,#75afaa, #609e99, 	#4d8c8a);
   color: #ffffff;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -61,7 +61,7 @@ body {
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg,#E8A49C, #3C4CAD, #240E8B, #F04393 );
+  background: linear-gradient(135deg,#041037, #031846,#082065, #062d77, 	#114d94  );
   color: #ffffff;
   line-height: 1.6;
   box-sizing: border-box;
@@ -72,12 +72,12 @@ html{
 
 
 header {
-  background: linear-gradient(135deg,#DC8665, #138086, #534666, #CD7672, #F9C449);
+  background: linear-gradient(135deg,#78D5F5, #787FF6,#4ADEDE, #1CA7EC, 	#1F2F98 );
   color: rgb(14, 12, 12);
   padding: 60px 20px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
-  border-bottom: 2px solid #ff7e5f;
+  border-bottom: 2px solid #CEECE3;
 }
 
 header h1 {
@@ -99,7 +99,7 @@ header p {
 }
 
 #about h2 {
-  color: rgb(241, 189, 189); /* Set color of the About Us heading */
+  color: #9AD4CC; /* Set color of the About Us heading */
 }
 
 #about p {
@@ -129,12 +129,12 @@ nav a {
 }
 
 nav a:hover {
-  background: #ff7e5f;
+  background: #279DA4;
   transform: translateY(-4px);
 }
 
 nav a:active {
-  background: #feb47b;
+  background: #279DA4;
 }
 
 /* Section Styling */
@@ -148,7 +148,7 @@ section h2 {
   text-align: center;
   font-size: 3em;
   margin-bottom: 20px;
-  color: #f1bdbd;
+  color: #9AD4CC;
   font-weight: 700;
 }
 
@@ -168,7 +168,7 @@ section p {
 }
 
 .card {
-  background: #1e1e1e;
+  background: linear-gradient(135deg,#041037, #031846,#082065, #062d77, 	#114d94  );
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
@@ -226,7 +226,7 @@ section p {
 }
 
 .see-more:hover {
-  background: #feb47b;
+  background: #05808C;
   transform: translateY(-4px);
 }
 
@@ -267,7 +267,7 @@ section p {
 }
 
 .modal-content button {
-  background: #ff7e5f;
+  background: #05808C;
   padding: 12px 25px;
   border: none;
   color: white;
@@ -277,7 +277,7 @@ section p {
 }
 
 .modal-content button:hover {
-  background: #feb47b;
+  background: #05808C;
   transform: translateY(-4px);
 }
 
@@ -291,7 +291,7 @@ footer {
 }
 
 footer a {
-  color: #ff7e5f;
+  color: #9AD4CC;
   text-decoration: none;
   font-weight: 500;
 }
@@ -342,7 +342,7 @@ footer a:hover {
 .contact-form button {
   width: 100%;
   padding: 18px;
-  background-color: #ff7e5f;
+  background-color: #9AD4CC;
   color: white;
   border: none;
   border-radius: 8px;
@@ -352,7 +352,7 @@ footer a:hover {
 }
 
 .contact-form button:hover {
-  background-color: #feb47b;
+  background-color: #9AD4CC;
 }
 
 .contact-form textarea {
