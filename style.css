@@ -72,7 +72,7 @@ html{
 
 
 header {
-  background: linear-gradient(135deg,#78D5F5, #787FF6,#4ADEDE, #1CA7EC, 	#1F2F98 );
+  background: #66FCF1;
   color: rgb(14, 12, 12);
   padding: 60px 20px;
   text-align: center;
@@ -429,4 +429,126 @@ footer a:hover {
 .social-icons a:hover::after {
   opacity: 1; /* Show the label on hover */
   transition: opacity 0.3s ease;
+}
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 36px;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+#contact {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Success Message Styles */
+.success-message {
+  background-color: #279DA4;  
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  margin-top: 30px;
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }

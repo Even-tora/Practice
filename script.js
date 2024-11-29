@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Hello Welcome.', 'to our page', 'Have a Great day.'], 'text',['tomato','rebeccapurple','lightblue']);
+consoleText(['Hello :))', 'Welcome to our page', 'Have a Great day.'], 'text',['lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -58,5 +58,32 @@ function openModal(title, description) {
   function closeModal() {
     document.getElementById('modal').style.display = 'none';
   }
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    const successMessage = document.getElementById('success-message');
+  
+    // Handle form submission
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      // Collect form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+  
+      console.log('Form submitted:', { name, email, message });
+  
+      // Show the success message
+      successMessage.style.display = 'block';
+  
+      // Reset the form after submission
+      form.reset();
+  
+      // Hide the success message after 5 seconds
+      setTimeout(function () {
+        successMessage.style.display = 'none';
+      }, 5000); // 5 seconds
+    });
+  });
   
   
