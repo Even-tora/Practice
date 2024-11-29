@@ -216,18 +216,24 @@ section p {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 20px;
-  background: #111111;
-  color: #fffbfb;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  background: #111111; /* Ensures the background color is a rich black */
+  color: #ffffff; /* Changed to pure white for better readability */
+  text-decoration: none; /* Removes the underline from the link */
+  border-radius: 8px; /* Slightly more rounded corners for a modern touch */
+  font-weight: 600; /* Makes the text bolder for better visibility */
+  cursor: pointer; /* Indicates it's clickable */
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .see-more:hover {
-  background: #05808C;
-  transform: translateY(-4px);
+  background: #05808C; /* Lightens the background on hover for feedback */
+  transform: scale(1.05); /* Adds a slight zoom effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+.see-more:active {
+  transform: scale(0.95); /* Slightly shrinks on click for a responsive feel */
+  background: #05808C; /* Darkens the background when clicked */
 }
 
 /* Modal Styling */
@@ -552,3 +558,4 @@ button:focus {
     font-size: 16px;
   }
 }
+
