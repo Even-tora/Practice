@@ -93,6 +93,14 @@ header p {
   font-size: 1.5em;
   font-weight: 300;
 }
+
+#logo {
+  position: absolute;
+  top: 110px; /* Adjust the top distance to your preference */
+  left: 100px; /* Adjust the left distance to your preference */
+  width: 150px; /* Adjust the size of the logo */
+  height: auto; /* Keep the logo's aspect ratio */
+}
 /* About Us Section */
 #about {
   color: #dcf3dd; /* Set text color to green */
