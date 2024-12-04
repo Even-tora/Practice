@@ -95,12 +95,18 @@ header p {
 }
 
 #logo {
-  
+
   position: absolute;
-  top: 110px; /* Adjust the top distance to your preference */
-  left: 100px; /* Adjust the left distance to your preference */
+  top: 50px; /* Adjust the top distance to your preference */
+  left: 80px; /* Adjust the left distance to your preference */
   width: 150px; /* Adjust the size of the logo */
   height: auto; /* Keep the logo's aspect ratio */
+}
+
+header {
+  position: relative; /* This ensures the header can contain the absolute-positioned logo */
+  padding-top: 50px; /* Add space at the top if needed for text or to balance the logo */
+  text-align: center; /* Center the header text */
 }
 /* About Us Section */
 #about {
