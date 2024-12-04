@@ -103,11 +103,7 @@ header p {
   height: auto; /* Keep the logo's aspect ratio */
 }
 
-header {
-  position: relative; /* This ensures the header can contain the absolute-positioned logo */
-  padding-top: 50px; /* Add space at the top if needed for text or to balance the logo */
-  text-align: center; /* Center the header text */
-}
+
 /* About Us Section */
 #about {
   color: #dcf3dd; /* Set text color to green */
